@@ -1,0 +1,21 @@
+{
+  "name": "curso-de-webpack",
+  "version": "1.0.0",
+  "description": "este es un curso muy divertido",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:external": "webpack --mode production --config ./external/webpack.config.js",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "@kegovc",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
