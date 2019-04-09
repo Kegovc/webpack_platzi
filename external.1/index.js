@@ -1,1 +1,0 @@
-console.log("hola mundo!, desde webpack eb un webpack.config")

@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:external": "webpack --mode production --config ./external/webpack.config.js",
+    "build:css": "webpack --mode production --config ./css-style-loader/webpack.config.js",
+    "build:extrac:css": "webpack --mode production --config ./plugin-extrac-text/webpack.config.js",
+    "build:multiples": "webpack --mode production --config ./multiples-entry-ponts/webpack.config.js",
+    "build:dev": "webpack-dev-server --mode production --config ./webpack-dev-server/webpack.config.js",
     "build": "webpack --mode production",
     "dev": "webpack --mode development"
   },
@@ -15,7 +19,11 @@
   "author": "@kegovc",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "css-loader": "0.28.7",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "style-loader": "0.19.1",
+    "webpack": "4.29.6",
+    "webpack-cli": "3.3.0",
+    "webpack-dev-server": "3.2.1"
   }
 }
